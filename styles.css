@@ -1,0 +1,110 @@
+﻿/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle, #ffd700, #ff4500);
+}
+
+.container {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    color: #4d4d4d;
+}
+
+header {
+    background-color: rgba(255, 140, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: fade-in 2s;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Great Vibes', cursive;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #fffacd;
+}
+
+.message-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    animation: fade-in 3s;
+}
+
+.message-box h2 {
+    font-size: 2em;
+    color: #ff6347;
+    font-family: 'Great Vibes', cursive;
+}
+
+button {
+    background: linear-gradient(to right, #ffa500, #ff4500);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: fade-in 4s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff4500, #ffa500);
+}
+
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    animation: fade-in 2s ease-in-out;
+}
+
+img {
+    max-width: 200px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #666666;
+}
